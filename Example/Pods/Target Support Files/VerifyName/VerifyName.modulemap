@@ -1,0 +1,6 @@
+framework module VerifyName {
+  umbrella header "VerifyName-umbrella.h"
+
+  export *
+  module * { export * }
+}

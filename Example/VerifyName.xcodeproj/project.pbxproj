@@ -38,8 +38,8 @@
 
 /* Begin PBXFileReference section */
 		2460A819251743820FBDF3C2 /* Pods-VerifyName_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VerifyName_Example.release.xcconfig"; path = "Target Support Files/Pods-VerifyName_Example/Pods-VerifyName_Example.release.xcconfig"; sourceTree = "<group>"; };
-		3D5431611C3097978506F67D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		44794C87D5068E7C6BE0142D /* VerifyName.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = VerifyName.podspec; path = ../VerifyName.podspec; sourceTree = "<group>"; };
+		3D5431611C3097978506F67D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		44794C87D5068E7C6BE0142D /* VerifyName.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = VerifyName.podspec; path = ../VerifyName.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5C4FD55C8179F08DB5954864 /* Pods-VerifyName_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VerifyName_Example.debug.xcconfig"; path = "Target Support Files/Pods-VerifyName_Example/Pods-VerifyName_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		5CD3F79C9F29ADF40BCCC00A /* Pods-VerifyName_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VerifyName_Tests.debug.xcconfig"; path = "Target Support Files/Pods-VerifyName_Tests/Pods-VerifyName_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* VerifyName_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VerifyName_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,7 +64,7 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		939C7789FEE394A912547287 /* Pods-VerifyName_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VerifyName_Tests.release.xcconfig"; path = "Target Support Files/Pods-VerifyName_Tests/Pods-VerifyName_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		B48D8145364A527C60A5090A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B48D8145364A527C60A5090A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D23FB62DD3FD7DFB8C7EF07A /* Pods_VerifyName_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VerifyName_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D24D6DF817C7EDDE8B82CB9F /* Pods_VerifyName_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VerifyName_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -103,7 +103,6 @@
 				5CD3F79C9F29ADF40BCCC00A /* Pods-VerifyName_Tests.debug.xcconfig */,
 				939C7789FEE394A912547287 /* Pods-VerifyName_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,7 +247,11 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = laobizhai;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = ZE3B4CED3K;
+					};
 					6003F5AD195388D20070C39A = {
+						DevelopmentTeam = ZE3B4CED3K;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
@@ -258,6 +261,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -449,7 +453,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -482,7 +486,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -494,9 +498,11 @@
 			baseConfigurationReference = 5C4FD55C8179F08DB5954864 /* Pods-VerifyName_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZE3B4CED3K;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VerifyName/VerifyName-Prefix.pch";
 				INFOPLIST_FILE = "VerifyName/VerifyName-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -510,9 +516,11 @@
 			baseConfigurationReference = 2460A819251743820FBDF3C2 /* Pods-VerifyName_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZE3B4CED3K;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VerifyName/VerifyName-Prefix.pch";
 				INFOPLIST_FILE = "VerifyName/VerifyName-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -526,6 +534,7 @@
 			baseConfigurationReference = 5CD3F79C9F29ADF40BCCC00A /* Pods-VerifyName_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZE3B4CED3K;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -551,6 +560,7 @@
 			baseConfigurationReference = 939C7789FEE394A912547287 /* Pods-VerifyName_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZE3B4CED3K;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

@@ -7,7 +7,7 @@
 //
 
 #import "LBZViewController.h"
-
+#import <LBZVerifyName.h>
 @interface LBZViewController ()
 
 @end
@@ -17,7 +17,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    BOOL isYes = [[LBZVerifyName alloc] isVaildRealName:@"发哥"];
+    if (isYes == YES) {
+        NSLog(@"姓名符合规则");
+    } else {
+        NSLog(@"姓名不符合规则");
+    }
 }
 
 - (void)didReceiveMemoryWarning
