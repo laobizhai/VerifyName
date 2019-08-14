@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'VerifyName_Example' do
+  pod 'VerifyName', :path => '../'
+
+  target 'VerifyName_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
