@@ -1,5 +1,5 @@
 PODS:
-  - VerifyName (0.1.0)
+  - VerifyName (0.2.0)
 
 DEPENDENCIES:
   - VerifyName (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  VerifyName: b81c32e6007c8d01f8b418123f785103ecb8ef3c
+  VerifyName: 558a3b124062152f48fa652d14174ce642471a47
 
 PODFILE CHECKSUM: 8d97d38668513982ce2272d5be27ae34c39de2d5
 

@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
+		51A9BB842303E89700718BCF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
+		51A9BB862303E98200718BCF /* Pods_VerifyName_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24D6DF817C7EDDE8B82CB9F /* Pods_VerifyName_Example.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		51A9BB962304E98B00718BCF /* Pods_VerifyName_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24D6DF817C7EDDE8B82CB9F /* Pods_VerifyName_Example.framework */; };
+		51A9BB972304E98B00718BCF /* Pods_VerifyName_Example.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D24D6DF817C7EDDE8B82CB9F /* Pods_VerifyName_Example.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
@@ -23,7 +26,6 @@
 		6D45F484057181F761B3A307 /* Pods_VerifyName_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23FB62DD3FD7DFB8C7EF07A /* Pods_VerifyName_Tests.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		CE41A8190AF5D31214076D27 /* Pods_VerifyName_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24D6DF817C7EDDE8B82CB9F /* Pods_VerifyName_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,20 @@
 			remoteInfo = VerifyName;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		51A9BB982304E98B00718BCF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				51A9BB972304E98B00718BCF /* Pods_VerifyName_Example.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2460A819251743820FBDF3C2 /* Pods-VerifyName_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VerifyName_Example.release.xcconfig"; path = "Target Support Files/Pods-VerifyName_Example/Pods-VerifyName_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -74,10 +90,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51A9BB962304E98B00718BCF /* Pods_VerifyName_Example.framework in Frameworks */,
+				51A9BB862303E98200718BCF /* Pods_VerifyName_Example.framework in Frameworks */,
+				51A9BB842303E89700718BCF /* Foundation.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
-				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				CE41A8190AF5D31214076D27 /* Pods_VerifyName_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +225,7 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				FC5B827CD11C2181E0ED8857 /* [CP] Embed Pods Frameworks */,
+				51A9BB982304E98B00718BCF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -503,6 +521,7 @@
 				GCC_PREFIX_HEADER = "VerifyName/VerifyName-Prefix.pch";
 				INFOPLIST_FILE = "VerifyName/VerifyName-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -521,6 +540,7 @@
 				GCC_PREFIX_HEADER = "VerifyName/VerifyName-Prefix.pch";
 				INFOPLIST_FILE = "VerifyName/VerifyName-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "LBZPhoneNumVerify.h"
 #import "LBZVerifyName.h"
 
 FOUNDATION_EXPORT double VerifyNameVersionNumber;
